@@ -1,5 +1,6 @@
 # clash-for-linux
 There is a way about how to set a clash for you linux
+
 由于任务需求，经常需要在不同版本的ubuntu系统中来回切换，但是又要常常用到梯子，深感繁琐。因此在这里记录一下自己的配置过程，以待参考。
 
 一、下载clash
@@ -12,6 +13,7 @@ mkdir clash
 cd Dowland
 将下载的压缩包解压
 mv Dowland/clash-linux-amd64-v1.18.0 /home/ros/clash
+
 cd
 
 cd clash
