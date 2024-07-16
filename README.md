@@ -7,11 +7,15 @@ There is a way about how to set a clash for you linux
 大部分地址已经失效，所以这一步请读者自行寻找下载链接。
 
 二、配置系统并尝试运行
+
 su
+
 mkdir clash
 
 cd Dowland
+
 将下载的压缩包解压
+
 mv Dowland/clash-linux-amd64-v1.18.0 /home/ros/clash
 
 cd
@@ -29,8 +33,11 @@ wget -O config.yaml [订阅链接]
 
 
 chmod +x clash 
+
 ll
+
 ros@ros-virtual-machine:~/clash$ ll
+
 总用量 15572
 drwxr-xr-x  2 root root    4096 5月  26 23:14 ./
 drwxr-xr-x 31 ros  ros     4096 5月  26 23:11 ../
@@ -40,6 +47,7 @@ drwxr-xr-x 31 ros  ros     4096 5月  26 23:11 ../
 -rw-rw-r--  1 ros  ros  5932534 5月  26 22:16 Country.mmdb
 
  ./clash -d .
+ 
 INFO[0000] Start initial compatible provider Proxy      
 INFO[0000] Start initial compatible provider Domestic   
 INFO[0000] Start initial compatible provider AsianTV    
@@ -47,6 +55,7 @@ INFO[0000] Start initial compatible provider Others
 INFO[0000] Start initial compatible provider GlobalTV
 
 三、开启代理
+
 打开系统设置，点击网络代理右边的⚙按钮，选择手动，填写HTTP和HTTPS代理为127.0.0.1:7890，填写Socks主机为127.0.0.1:7891，即可启用系统代理，如下图所示。
 ![image](https://github.com/user-attachments/assets/7da88135-5dec-4e9d-948f-616c3f7e4cfc)
 
@@ -55,6 +64,7 @@ INFO[0000] Start initial compatible provider GlobalTV
 这个时候一般就成功翻上了，可以Ping一下youtube试试能不能ping通
 
 四、配置开机自启动
+
 sudo su
 
 cd
