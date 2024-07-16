@@ -76,18 +76,27 @@ vi /etc/systemd/system/clash.service
 填入以下内容
 
 [Unit]
+
 Description=Clash service
+
 After=network.target
 
 [Service]
+
 Type=simple
+
 User=ros（你的用户名）
+
 ExecStart=/home/ros/clash/clash（Clash 程序路径）
+
 Restart=on-failure
+
 RestartPreventExitStatus=23
 
 [Install]
+
 WantedBy=multi-user.target
+
 wq保存出来
 
 # 重载服务
@@ -98,6 +107,7 @@ sudo systemctl enable clash
 sudo systemctl start clash
 # 查看服务状态
 sudo systemctl status clash
+
 都跑一遍，然后服务状态如下则表示配置成功
 
 root@ros-virtual-machine:~# systemctl status clash.service
